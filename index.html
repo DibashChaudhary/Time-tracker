@@ -31,7 +31,7 @@
                 </div>
 
                 <div class="col-3">
-                <input name="hr" type="number" class="form-control" placeholder="Last name" aria-label="Last name">
+                <input name="hr" type="number" class="form-control" placeholder="Last name" aria-label="Last name" min="1">
                 </div>
                 <div class="col-3">
                     <div class="d-grid gap-2">
@@ -58,29 +58,19 @@
                         <h2 class="text-center">Bad list</h2>
                         <hr/>
                         <table class="table table-striped">
-                            <tbody>
-                              <tr>
-                                <th scope="row">1</th>
-                                <td>Watching TV</td>
-                                <td>5 Hrs</td>
-                                <td>
-                                    <button class="btn btn-primary"><i class="fa-solid fa-angles-left"></i></button>
-
-                                    <button class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
-                                    
-                                </td>
-                              </tr>
+                            <tbody id="bad-List">
+                              
                             </tbody>
                           </table>
 
-                          <div>You could have saved = 50hrs</div>
+                          <div>You could have saved = <span id="totalBadHrs">0</span></div>
                           
 
                     </div>
             </div>
                     
          <div class="row">
-            <div class="col">The total time allocated = 50 hrs</div>
+            <div class="col">The total time allocated = <span id="totalHrs">0</span></div>
          </div>
 
         </div>
